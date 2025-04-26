@@ -197,8 +197,8 @@ nav a:hover::after {
 .hero-text-direct {
   position: relative;
   z-index: 2;
-  max-width: 900px;
-  padding: 0 2rem;
+  max-width: 90%; /* 컨테이너 너비 조정 */
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -212,8 +212,10 @@ nav a:hover::after {
 
 .highlight {
   font-family: 'Malang';
-  font-size: 8rem;
+  font-size: 5rem; /* 웹 환경에서의 기본 크기 */
   color: var(--main-color);
+  line-height: 1.1; /* 줄 간격 줄이기 */
+  display: block; /* 블록 표시로 변경하여 한 줄 차지 */
 }
 
 .subtitle {
@@ -670,7 +672,7 @@ nav a:hover::after {
 
 @media (max-width: 768px) {
   .highlight {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   header {
@@ -691,15 +693,18 @@ nav a:hover::after {
   }
   
   .hero-text-direct h1 {
-    font-size: 2.2rem;
-  }
-  
-  .highlight {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
   
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-top: 1rem;
   }
   
   .section-title {
@@ -735,6 +740,7 @@ nav a:hover::after {
 @media (max-width: 576px) {
   .highlight {
     font-size: 3rem;
+    margin-bottom: 0.5rem; /* 간격 줄이기 */
   }
 
   .section-title {
@@ -786,7 +792,8 @@ nav a:hover::after {
   }
   
   .hero-text-direct h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
   }
   
   .highlight {
