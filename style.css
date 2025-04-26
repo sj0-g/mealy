@@ -114,10 +114,9 @@ img {
   padding: 0 1rem;
 }
 
-/* ===== 모던한 Navbar ===== */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* space-between에서 center로 변경 */
   align-items: center;
   padding: 0 5%;
   background: var(--white);
@@ -128,6 +127,12 @@ header {
   height: 70px;
   transition: var(--transition);
   width: 100%;
+}
+
+nav {
+  display: flex;
+  gap: 2.5rem;
+  /* 추가 스타일 없이 중앙 정렬됨 */
 }
 
 .logo-text {
@@ -207,7 +212,7 @@ nav a:hover::after {
 
 .highlight {
   font-family: 'Malang';
-  font-size: 3.2rem;
+  font-size: 8rem;
   color: var(--main-color);
 }
 
@@ -773,7 +778,7 @@ nav a:hover::after {
   }
   
   .highlight {
-    font-size: 2rem;
+    font-size: 10rem;
   }
   
   .subtitle {
