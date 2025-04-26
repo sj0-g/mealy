@@ -282,12 +282,14 @@ nav a:hover::after {
   color: var(--white);
 }
 
+/* 수정된 코드 */
 .process-content {
   background-color: var(--light-bg);
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  min-height: 140px;
+  /* min-height 제거 또는 더 작은 값으로 설정 */
+  min-height: auto; /* 또는 min-height 속성 자체를 제거 */
   width: 100%;
   transition: var(--transition);
 }
