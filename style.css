@@ -639,6 +639,10 @@ nav a:hover::after {
 
 /* ===== 반응형 디자인 ===== */
 @media (max-width: 992px) {
+  .highlight {
+    font-size: 6rem;
+  }
+
   .region-container {
     flex-direction: column;
     align-items: center;
@@ -665,6 +669,10 @@ nav a:hover::after {
 }
 
 @media (max-width: 768px) {
+  .highlight {
+    font-size: 4rem;
+  }
+
   header {
     padding: 0 1rem;
   }
@@ -725,6 +733,10 @@ nav a:hover::after {
 
 /* 모바일 화면에 대한 추가 최적화 */
 @media (max-width: 576px) {
+  .highlight {
+    font-size: 3rem;
+  }
+
   .section-title {
     font-size: 1.3rem;
     white-space: normal; /* 작은 화면에서는 줄바꿈 허용 */
@@ -812,6 +824,9 @@ nav a:hover::after {
 
 /* 작은 모바일 화면에 대한 추가 최적화 */
 @media (max-width: 375px) {
+  .highlight {
+    font-size: 2.5rem;
+  }
   .hero-text-direct h1 {
     font-size: 1.6rem;
   }
